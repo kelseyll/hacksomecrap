@@ -16,11 +16,14 @@ body {
 }
 
 .hero-title:nth-child(2) {
-    top: 390px;
+    top: 215px;
 }
 
 .poops {
+    cursor: no-drop;
+    top: 310px;
     position: relative;
+    z-index: -99;
 }
 
 .poops img {
@@ -47,6 +50,7 @@ body {
 }
 
 .marquee h1 {
+    font-size: 50px;
     white-space: nowrap;
     float: left;
     width: 50%;
@@ -58,14 +62,25 @@ body {
 }
 
 .gif-wall {
+    position: absolute;
+    top: 15px;
     overflow: hidden;
-    margin: 10px 0;
     max-height: 100px;
 }
 
+.gif-wall div {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .gif-wall img {
-    display: inline;
     height: 100px;
+    padding: 0 80px;
+}
+
+.gif-wall img:hover {
+    cursor: help;
 }
 
 @keyframes marquee {
