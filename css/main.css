@@ -1,0 +1,82 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 5px 0 0 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Times;
+    overflow-x: hidden;
+}
+
+.hero-title {
+    top: 145px;
+    background-color: #fff;
+}
+
+.hero-title:nth-child(2) {
+    top: 390px;
+}
+
+.poops {
+    position: relative;
+}
+
+.poops img {
+    padding-bottom: 28px;
+    display: block;
+}
+
+.poops img:last-child {
+    padding-bottom: 0;
+}
+
+.marquee {
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee h1 {
+    white-space: nowrap;
+    float: left;
+    width: 50%;
+}
+
+.marquee div:hover {
+    cursor: progress;
+    animation-play-state: paused;
+}
+
+.gif-wall {
+    overflow: hidden;
+    margin: 10px 0;
+    max-height: 100px;
+}
+
+.gif-wall img {
+    display: inline;
+    height: 100px;
+}
+
+@keyframes marquee {
+    0%      { left: 0; }
+    100%    { left: -100%;}
+}
+@-moz-keyframes marquee {
+    0%      { left: 0; }
+    100%    { left: -100%;}
+}
+@-webkit-keyframes marquee {
+    0%      { left: 0; }
+    100%    { left: -100%;}
+}
