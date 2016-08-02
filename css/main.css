@@ -10,20 +10,58 @@ body {
     overflow-x: hidden;
 }
 
+.hero-title h1 {
+    font-size: 80px;
+    letter-spacing: 2.45px;
+}
+
 .hero-title {
     top: 145px;
-    background-color: #fff;
 }
 
 .hero-title:nth-child(2) {
-    top: 215px;
+    top: 225px;
+}
+
+.hero-description {
+    display: inline-block;
+    margin: 400px 100px;
+}
+
+.hero-description p {
+    text-transform: uppercase;
+    display: inline-block;
+    font-style: italic;
+    width: 600px;
+    font-size: 31px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+}
+
+.hero-description p:first-child {
+    padding-top: 40px;
+}
+
+.hero-description p:nth-child(2) {
+    vertical-align: top;
+    animation: rotate 10s linear infinite;
+}
+
+.hero-description p:nth-child(2) i img {
+    display: inline;
+}
+
+.poop {
+    background-image: url('shittyimages/poop.svg');
+    height: 10px;
+    width: 10px;
 }
 
 .poops {
     cursor: no-drop;
-    top: 310px;
     position: relative;
     z-index: -99;
+    margin-left: -810px;
 }
 
 .poops img {
@@ -50,37 +88,16 @@ body {
 }
 
 .marquee h1 {
-    font-size: 50px;
+    font-size: 80px;
     white-space: nowrap;
     float: left;
     width: 50%;
+    letter-spacing: 1px;
 }
 
 .marquee div:hover {
     cursor: progress;
     animation-play-state: paused;
-}
-
-.gif-wall {
-    position: absolute;
-    top: 15px;
-    overflow: hidden;
-    max-height: 100px;
-}
-
-.gif-wall div {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.gif-wall img {
-    height: 100px;
-    padding: 0 80px;
-}
-
-.gif-wall img:hover {
-    cursor: help;
 }
 
 @keyframes marquee {
@@ -94,4 +111,9 @@ body {
 @-webkit-keyframes marquee {
     0%      { left: 0; }
     100%    { left: -100%;}
+}
+
+
+@keyframes rotate {
+    100%    { transform: rotate(360deg);}
 }
