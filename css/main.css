@@ -25,7 +25,7 @@ body {
 
 .hero-description {
     display: inline-block;
-    margin: 400px 100px;
+    margin: 400px 100px 0 100px;
 }
 
 .hero-description p {
@@ -49,6 +49,31 @@ body {
 
 .hero-description p:nth-child(2) i img {
     display: inline;
+}
+
+.register-container {
+    display: block;
+    margin: 100px 100px;
+}
+
+.register-container img {
+    float: right;
+    width: 550px;
+}
+
+.register-container a {
+    display: block;
+    text-align: right;
+    position: relative;
+    transform: translateX(170px);
+    font-size: 80px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.register-container a:nth-child(1) {
+    margin-top: 50px;
 }
 
 .poop {
