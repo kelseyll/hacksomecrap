@@ -16,16 +16,16 @@ body {
 }
 
 .hero-title {
-    top: 145px;
+    top: 85px;
 }
 
 .hero-title:nth-child(2) {
-    top: 225px;
+    top: 165px;
 }
 
 .hero-description {
     display: inline-block;
-    margin: 400px 100px 0 100px;
+    margin: 400px 50px 0 100px;
 }
 
 .hero-description p {
@@ -39,28 +39,34 @@ body {
 }
 
 .hero-description p:first-child {
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
-.hero-description p:nth-child(2) {
+.hero-description p:nth-child(2),
+.hero-description p:nth-child(3) {
     padding-top: 160px;
     vertical-align: top;
     white-space: nowrap;
     animation: rotate 10s linear infinite;
 }
 
+.hero-description p:nth-child(3) {
+    animation: rotate 13s linear infinite;
+}
+
 .hero-description p:nth-child(2) i img {
     display: inline;
 }
 
-.hero-description p:nth-child(2) span {
+.hero-description p:nth-child(2) span,
+.hero-description p:nth-child(3) span {
     padding: 0 13px 0 26px;
     font-size: 25px;
 }
 
 .register-container {
     display: block;
-    margin: 100px 100px;
+    margin: 0 100px 130px 100px;
 }
 
 .register-container img {
@@ -140,6 +146,55 @@ body {
 .marquee div:hover {
     cursor: progress;
     animation-play-state: paused;
+}
+
+.graphic-container img {
+    margin: 0 auto;
+    display: block;
+}
+
+.schedule-container {
+    transform: translateY(-50px);
+}
+
+.schedule-container h1 {
+    font-size: 80px;
+    font-style: italic;
+    transform: translateX(-10px);
+}
+
+.schedule-container ul {
+    padding-left: 200px;
+    font-weight: 200;
+    font-style: italic;
+    cursor: help;
+}
+
+.schedule-container li {
+    font-size: 30px;
+    padding-left: 90px;
+    list-style-position: inside;
+    letter-spacing: 0.5px;
+    font-size: 25px;
+}
+
+.schedule-container li.date {
+    list-style: none;
+    font-weight: 600; 
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 60px 0 20px 0;
+}
+
+.schedule-container u {
+    text-decoration: none;
+    font-weight: 500;
+    padding-right: 20px;
+    min-width: 70px;
+    min-width: 150px;
+    display: inline-block;
+    text-align: right;
 }
 
 @keyframes marquee {
