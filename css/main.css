@@ -197,6 +197,15 @@ body {
     text-align: right;
 }
 
+.code-of-conduct-container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.code-of-conduct-container p,h2 {
+    margin-top: 15px;
+}
+
 @keyframes marquee {
     0%      { left: 0; }
     100%    { left: -100%;}
