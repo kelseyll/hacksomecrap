@@ -25,7 +25,7 @@ body {
 
 .hero-description {
     display: inline-block;
-    margin: 400px 50px 0 100px;
+    margin: 300px 50px 0 100px;
 }
 
 .hero-description p {
@@ -44,7 +44,7 @@ body {
 
 .hero-description p:nth-child(2),
 .hero-description p:nth-child(3) {
-    padding-top: 160px;
+    padding-top: 90px;
     vertical-align: top;
     white-space: nowrap;
     animation: rotate 10s linear infinite;
@@ -151,10 +151,12 @@ body {
 .graphic-container img {
     margin: 0 auto;
     display: block;
+    position: absolute;
+    transform: translateX(-250px);
 }
 
 .schedule-container {
-    transform: translateY(-50px);
+    margin-top: -60px;
 }
 
 .schedule-container h1 {
@@ -171,6 +173,7 @@ body {
 }
 
 .schedule-container li {
+    list-style: none;
     font-size: 30px;
     padding-left: 90px;
     list-style-position: inside;
@@ -180,7 +183,7 @@ body {
 
 .schedule-container li.date {
     list-style: none;
-    font-weight: 600; 
+    font-weight: 600;
     font-size: 40px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -195,6 +198,33 @@ body {
     min-width: 150px;
     display: inline-block;
     text-align: right;
+}
+
+.schedule-container span {
+    max-width: 370px;
+    transform: translateX(-50px);
+    margin-bottom: 30px;
+    display: inline-block;
+    line-height: 2;
+}
+
+.schedule-container a {
+    color: black;
+}
+
+.sponsors-container {
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.sponsors-container h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    font-style: italic;
+    width: 600px;
+    font-size: 31px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
 }
 
 @keyframes marquee {
