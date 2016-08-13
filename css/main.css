@@ -8,6 +8,7 @@
 body {
     font-family: 'Helvetica Neue', Times;
     overflow-x: hidden;
+    min-width: 1200px;
 }
 
 .hero-title h1 {
@@ -32,7 +33,7 @@ body {
     text-transform: uppercase;
     display: inline-block;
     font-style: italic;
-    width: 600px;
+    width: 520px;
     font-size: 31px;
     line-height: 52px;
     letter-spacing: 0.5px;
@@ -106,12 +107,15 @@ body {
 }
 
 .poops {
-    transform: translateX(-300px);
-    transform: translateY(-100px);
+    transform: translateX(-120px);
     cursor: no-drop;
     position: relative;
     z-index: -99;
-    margin-left: -810px;
+}
+
+.single {
+    transform: translateX(-100px);
+    transform: translateY(-80px);
 }
 
 .poops img {
@@ -159,8 +163,16 @@ body {
 }
 
 .graphic-container-2 img {
-    right: 20px;
-    top: 1900px;
+    right: -310px;
+    top: 1461px;
+}
+
+.graphic-container-3 {
+    transform: translateX(-200px);
+}
+
+footer .graphic-container-3 {
+    transform: translateY(-200px);
 }
 
 .schedule-container h1 {
@@ -186,7 +198,7 @@ body {
 }
 
 .date {
-    cursor: url(images/REGISTER.png), auto;
+    text-decoration: underline;
 }
 
 .schedule-container li.date {
@@ -197,7 +209,20 @@ body {
     text-transform: uppercase;
     padding: 0 0 20px 0;
     margin-top: 60px;
+    display: inline-block;
     background-color: #fff;
+}
+
+li.date:hover,
+.register-container a:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,e3ed2d+36,25a3e8+66,f589ff+100 */
+    background: #ff3232; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ff3232 0%, #e3ed2d 36%, #25a3e8 66%, #f589ff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ff3232 0%,#e3ed2d 36%,#25a3e8 66%,#f589ff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ff3232 0%,#e3ed2d 36%,#25a3e8 66%,#f589ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#f589ff',GradientType=0 ); /* IE6-9 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .schedule-container u {
@@ -214,8 +239,9 @@ body {
     max-width: 370px;
     transform: translateX(-50px);
     margin-bottom: 30px;
-    display: inline-block;
+    display: block;
     line-height: 2;
+    background-color: #fff;
 }
 
 .schedule-container a {
@@ -241,6 +267,8 @@ body {
     margin: 50px 150px;
     font-size: 25px;
     font-weight: 300;
+    position: relative;
+    z-index: 99;
 }
 
 .sponsors-container ul li {
@@ -255,16 +283,25 @@ body {
     margin-top: 70px;
 }
 
+.founded-gif {
+    height: 250px;
+    position: relative;
+    display: inline;
+}
+
+footer {
+    margin-top: 150px;
+}
+
 footer ul {
     list-style: none;
-    margin-right: 200px;
+    margin-right: 90px;
     text-align: right;
     margin-bottom: 100px;
 }
 
 footer a {
-    color: #757575;
-    font-style: italic;
+    color: #000;
 }
 
 @keyframes marquee {
