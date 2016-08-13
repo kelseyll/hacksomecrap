@@ -150,14 +150,16 @@ body {
     animation-play-state: paused;
 }
 
-.graphic-container img {
+.graphic-container img,
+.graphic-container-2 img {
     margin: 0 auto;
     display: block;
     position: absolute;
 }
 
-.schedule-container {
-    margin-bottom: 100px;
+.graphic-container-2 img {
+    right: 20px;
+    top: 500px;
 }
 
 .schedule-container h1 {
@@ -182,13 +184,18 @@ body {
     font-size: 25px;
 }
 
+.date {
+    cursor: url(images/REGISTER.png), auto;
+}
+
 .schedule-container li.date {
     list-style: none;
     font-weight: 600;
     font-size: 40px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    padding: 60px 0 20px 0;
+    padding: 0 0 20px 0;
+    margin-top: 60px;
 }
 
 .schedule-container u {
@@ -228,8 +235,22 @@ body {
     letter-spacing: 0.5px;
 }
 
+.sponsors-container ul {
+    margin: 50px 150px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.sponsors-container ul li {
+    margin: 20px 0;
+}
+
+.sponsors-container ul li a {
+    color: #000;
+}
+
 .marquee-sponsors {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 @keyframes marquee {
