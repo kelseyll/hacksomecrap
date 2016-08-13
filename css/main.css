@@ -82,7 +82,7 @@ body {
     font-size: 80px;
     text-decoration: none;
     font-weight: 600;
-    color: black;
+    color: #000;
 }
 
 .register-container a:first-of-type {
@@ -151,7 +151,8 @@ body {
 }
 
 .graphic-container img,
-.graphic-container-2 img {
+.graphic-container-2 img,
+.graphic-container-3 img {
     margin: 0 auto;
     display: block;
     position: absolute;
@@ -159,7 +160,7 @@ body {
 
 .graphic-container-2 img {
     right: 20px;
-    top: 500px;
+    top: 1900px;
 }
 
 .schedule-container h1 {
@@ -196,6 +197,7 @@ body {
     text-transform: uppercase;
     padding: 0 0 20px 0;
     margin-top: 60px;
+    background-color: #fff;
 }
 
 .schedule-container u {
@@ -253,6 +255,18 @@ body {
     margin-top: 70px;
 }
 
+footer ul {
+    list-style: none;
+    margin-right: 200px;
+    text-align: right;
+    margin-bottom: 100px;
+}
+
+footer a {
+    color: #757575;
+    font-style: italic;
+}
+
 @keyframes marquee {
     0%      { left: 0; }
     100%    { left: -100%;}
@@ -265,7 +279,6 @@ body {
     0%      { left: 0; }
     100%    { left: -100%;}
 }
-
 
 @keyframes rotate {
     100%    { transform: rotate(360deg);}
