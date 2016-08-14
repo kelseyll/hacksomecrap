@@ -74,7 +74,7 @@ body {
 
 .register-container img {
     float: right;
-    width: 550px;
+    width: 430px;
 }
 
 .register-container a {
@@ -216,7 +216,8 @@ footer .graphic-container-3 {
 }
 
 li.date:hover,
-.register-container a:hover {
+.register-container a:hover,
+.conduct p a:hover {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,e3ed2d+36,25a3e8+66,f589ff+100 */
     background: #ff3232; /* Old browsers */
     background: -moz-linear-gradient(top,  #ff3232 0%, #e3ed2d 36%, #25a3e8 66%, #f589ff 100%); /* FF3.6-15 */
@@ -304,6 +305,32 @@ footer ul {
 
 footer a {
     color: #000;
+}
+
+.conduct {
+    margin-left: 50px;
+}
+
+.conduct p {
+    text-align: left;
+    max-width: 600px;
+    font-weight: 200;
+    line-height: 1.6;
+    margin-bottom: 100px;
+}
+
+.conduct p a {
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.conduct h1 {
+    margin: 50px 0;
+}
+
+.conduct .graphic-container-3 {
+    transform: translateY(-50px);
 }
 
 @keyframes marquee {
