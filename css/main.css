@@ -217,15 +217,18 @@ footer .graphic-container-3 {
 
 li.date:hover,
 .register-container a:hover,
-.conduct p a:hover {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,e3ed2d+36,25a3e8+66,f589ff+100 */
-    background: #ff3232; /* Old browsers */
-    background: -moz-linear-gradient(top,  #ff3232 0%, #e3ed2d 36%, #25a3e8 66%, #f589ff 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #ff3232 0%,#e3ed2d 36%,#25a3e8 66%,#f589ff 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #ff3232 0%,#e3ed2d 36%,#25a3e8 66%,#f589ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#f589ff',GradientType=0 ); /* IE6-9 */
+.conduct p a:hover,
+.conduct-link:hover {
+    background: -moz-linear-gradient( 90deg, rgba(255,0,0,0) 0%, rgba(255,0,0,0.8) 7%, rgba(255,0,0,0.9) 10%, rgb(255,0,0) 11%, rgb(255,0,0) 12%, rgb(255,252,0) 28%, rgb(1,180,57) 45%, rgb(1,207,156) 54%, rgb(0,234,255) 60%, rgb(0,119,200) 65%, rgb(0,3,144) 75%, rgb(128,2,171) 83%, rgb(255,0,198) 88%, rgba(255,0,198,0.9) 89%, rgba(255,0,198,0.8) 93%, rgb(255,0,198) 100%);
+    background: -webkit-linear-gradient( 90deg, rgba(255,0,0,0) 0%, rgba(255,0,0,0.8) 7%, rgba(255,0,0,0.9) 10%, rgb(255,0,0) 11%, rgb(255,0,0) 12%, rgb(255,252,0) 28%, rgb(1,180,57) 45%, rgb(1,207,156) 54%, rgb(0,234,255) 60%, rgb(0,119,200) 65%, rgb(0,3,144) 75%, rgb(128,2,171) 83%, rgb(255,0,198) 88%, rgba(255,0,198,0.9) 89%, rgba(255,0,198,0.8) 93%, rgb(255,0,198) 100%);
+    background: -ms-linear-gradient( 90deg, rgba(255,0,0,0) 0%, rgba(255,0,0,0.8) 7%, rgba(255,0,0,0.9) 10%, rgb(255,0,0) 11%, rgb(255,0,0) 12%, rgb(255,252,0) 28%, rgb(1,180,57) 45%, rgb(1,207,156) 54%, rgb(0,234,255) 60%, rgb(0,119,200) 65%, rgb(0,3,144) 75%, rgb(128,2,171) 83%, rgb(255,0,198) 88%, rgba(255,0,198,0.9) 89%, rgba(255,0,198,0.8) 93%, rgb(255,0,198) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.conduct-link {
+    font-size: 30px;
+    white-space: nowrap;
 }
 
 .schedule-container u {
@@ -303,6 +306,10 @@ footer ul {
     margin-bottom: 100px;
 }
 
+footer li {
+    margin: 30px 0;
+}
+
 footer a {
     color: #000;
 }
@@ -313,10 +320,11 @@ footer a {
 
 .conduct p {
     text-align: left;
-    max-width: 600px;
+    max-width: 1100px;
     font-weight: 200;
     line-height: 1.6;
     margin-bottom: 100px;
+    font-size: 20px;
 }
 
 .conduct p a {
