@@ -6,9 +6,11 @@
 }
 
 body {
-    font-family: 'Helvetica Neue', Times;
+    font-family: 'Helvetica', sans-serif;
     overflow-x: hidden;
     min-width: 1200px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .hero-title h1 {
@@ -33,7 +35,7 @@ body {
     text-transform: uppercase;
     display: inline-block;
     font-style: italic;
-    width: 520px;
+    width: 530px;
     font-size: 31px;
     line-height: 52px;
     letter-spacing: 0.5px;
