@@ -5,6 +5,10 @@
     margin: 5px 0 0 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Helvetica', sans-serif;
     overflow-x: hidden;
@@ -35,7 +39,7 @@ body {
     text-transform: uppercase;
     display: inline-block;
     font-style: italic;
-    width: 530px;
+    width: 570px;
     font-size: 31px;
     line-height: 52px;
     letter-spacing: 0.5px;
@@ -65,6 +69,14 @@ body {
 .hero-description p:nth-child(3) span {
     padding: 0 13px 0 26px;
     font-size: 25px;
+}
+
+.description {
+    margin-top: -100px;
+    margin-left: 100px;
+    margin-bottom: 80px;
+    max-width: 600px;
+    line-height: 1.6;
 }
 
 .register-container {
@@ -137,7 +149,6 @@ body {
 
 .marquee div {
   display: block;
-  width: 200%;
   position: absolute;
   overflow: hidden;
   animation: marquee 20s linear infinite;
@@ -199,10 +210,6 @@ footer .graphic-container-3 {
     font-size: 25px;
 }
 
-.date {
-    text-decoration: underline;
-}
-
 .schedule-container li.date {
     list-style: none;
     font-weight: 600;
@@ -227,6 +234,10 @@ li.date:hover,
     -webkit-text-fill-color: transparent;
 }
 
+.date {
+    text-decoration: underline;
+}
+
 .conduct-link {
     font-size: 30px;
     white-space: nowrap;
@@ -243,22 +254,14 @@ li.date:hover,
 }
 
 .schedule-container span {
-    max-width: 570px;
-    font-size: 14px;
+    max-width: 620px;
+    font-size: 16px;
     font-weight: 400;
     transform: translateX(-50px);
     margin-bottom: 30px;
     display: block;
     line-height: 2;
     background-color: #fff;
-}
-
-@media (min-width: 550px) {
-    .schedule-container span {
-        max-width: 370px;
-        font-size: 16px;
-        font-weight: 200;
-    }
 }
 
 .schedule-container a {
@@ -366,5 +369,13 @@ footer a {
 }
 
 @keyframes rotate {
+    100%    { transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    100%    { transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotate {
     100%    { transform: rotate(360deg);}
 }
