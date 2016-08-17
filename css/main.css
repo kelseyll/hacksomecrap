@@ -299,6 +299,11 @@ li.date:hover,
     color: #000;
 }
 
+.rs-logo {
+    vertical-align: middle;
+    width: 438px;
+}
+
 .marquee-sponsors {
     margin-top: 70px;
 }
