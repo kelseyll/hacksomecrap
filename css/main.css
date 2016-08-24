@@ -304,6 +304,13 @@ li.date:hover,
     width: 438px;
 }
 
+.es-logo {
+    vertical-align: middle;
+    width: 250px;
+    padding-left: 30px;
+    padding-bottom: 15px; 
+}
+
 .marquee-sponsors {
     margin-top: 70px;
 }
