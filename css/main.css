@@ -169,7 +169,8 @@ body {
 
 .graphic-container img,
 .graphic-container-2 img,
-.graphic-container-3 img {
+.graphic-container-3 img,
+.graphic-container-4 img {
     margin: 0 auto;
     display: block;
     position: absolute;
@@ -182,6 +183,10 @@ body {
 
 .graphic-container-3 {
     transform: translateX(-200px);
+}
+
+.graphic-container-4 img {
+    transform: translateX(700px);
 }
 
 footer .graphic-container-3 {
@@ -308,7 +313,7 @@ li.date:hover,
     vertical-align: middle;
     width: 250px;
     padding-left: 30px;
-    padding-bottom: 15px; 
+    padding-bottom: 15px;
 }
 
 .marquee-sponsors {
@@ -367,6 +372,26 @@ footer a {
     transform: translateY(-50px);
 }
 
+/* 2016 Hack Day Page */
+.project {
+    margin-top: 70px;
+}
+
+.project a span {
+    color: #FFF;
+    font-weight: 500;
+    font-style: italic;
+    background-color: #000;
+    padding: 10px 20px;
+    position: relative;
+    left: 220px;
+    bottom: 210px;
+    max-width: 500px;
+    display: inline-block;
+    line-height: 27px;
+}
+
+/* Animations */
 @keyframes marquee {
     0%      { left: 0; }
     100%    { left: -100%;}
