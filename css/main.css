@@ -239,6 +239,11 @@ li.date:hover,
     -webkit-text-fill-color: transparent;
 }
 
+.rainbow {
+    font-weight: 600;
+    color: #000;
+}
+
 .date {
     text-decoration: underline;
 }
